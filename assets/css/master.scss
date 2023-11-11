@@ -1,0 +1,102 @@
+.borderBox {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+
+    &::before,
+    &::after {
+        @extend .borderBox;
+    }
+
+    @extend .borderBox;
+}
+
+body {
+    background-color: rgb(26, 26, 26);
+    overflow: hidden;
+}
+
+.box {
+    width: 500px;
+    height: 500px;
+    // border: 2px solid red;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transform-style: preserve-3d;
+
+    >div {
+        
+        .heart {
+            width: 250px;
+            height: 250px;
+            transform: translate(-50%, -50%) rotate(45deg);
+            background-color: rgba(255, 0, 0, 1);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform-style: preserve-3d;
+
+            &::before {
+                content: '';
+                display: flex;
+                width: 100%;
+                height: 100%;
+                background-color: inherit;
+                border-radius: 50%;
+                transform: translateY(-50%);
+            }
+
+            &::after {
+                content: '';
+                display: flex;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                background-color: inherit;
+                transform: translate(-50%, -100%);
+            }
+
+
+           
+        }
+        &:nth-of-type(2) {
+            transform: rotateY(45deg);
+        }
+        &:nth-of-type(2)>.heart {
+            background-color: rgba(255, 255, 0, 1);
+        }
+        &:nth-of-type(3) {
+            transform: rotateY(-45deg);
+        }
+        &:nth-of-type(3)>.heart {
+            background-color: rgba(0, 255, 255, 1);
+        }
+        &:nth-of-type(4)  {
+            transform: rotateY(-65deg);
+        }
+        &:nth-of-type(4)>.heart {
+            background-color: rgba(128, 0, 128, 1);
+        }
+        &:nth-of-type(4) {
+            transform: rotateY(75deg);
+        }
+        &:nth-of-type(4)>.heart {
+            background-color: rgba(0, 128, 0, 1);
+        }
+    }
+
+    animation: anim 4s linear infinite ;
+    
+}
+
+@keyframes anim {
+    to {
+        transform: rotateY( 360deg);
+    }
+}
