@@ -4,9 +4,9 @@
 https://github.com/alinajafiweb/heart/assets/147813870/c2b05274-14b1-4a49-8b0d-9efe78d0a488
 
 
-- [Demo Project](https://aliafrouz.github.io/heart/)
+- [Demo Project](https://alinajafi-developer.github.io/heart/)
 
-- Developed by Ali Afrouz
+- Developed by Ali Najafi
 
 - Created - 2023-11-11
 
@@ -16,4 +16,4 @@ https://github.com/alinajafiweb/heart/assets/147813870/c2b05274-14b1-4a49-8b0d-9
 
 - Role - Frontend
 
-- How to reach me : with my [instagram](https://www.instagram.com/aliafrouz_com) and [linkedin](https://www.linkedin.com/in/aliafrouz/)
+- How to reach me : with my [instagram](https://www.instagram.com/alinajafi_developer) and [linkedin](https://www.linkedin.com/in/alinajafi-developer/)
